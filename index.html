@@ -3,11 +3,13 @@
 <head>
     <title>Redirecting...</title>
     <script>
-        // Redirect to index.php
-        window.location.href = "index.php";
+        // Function to redirect to index.php
+        function redirectToIndex() {
+            window.location.href = "index.php";
+        }
     </script>
 </head>
 <body>
-    <p>If you are not redirected, <a href="index.php">click here</a>.</p>
+    <p>If you are not redirected, <button onclick="redirectToIndex()">Click here</button>.</p>
 </body>
 </html>
